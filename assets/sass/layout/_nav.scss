@@ -1,5 +1,25 @@
 /* Nav */
 
-nav {
-    text-decoration: none;
+.nav {
+    min-height: 2.5em;
+    
+    a {
+        padding: 1em;
+    }
+
+    &-menu { // Mobile menu
+        display: none;
+    }
+}
+
+
+
+body.is-mobile {
+    .nav-menu { // Mobile menu
+        display: block;
+    }
+    
+    .nav-links {
+        display: none;
+    }
 }

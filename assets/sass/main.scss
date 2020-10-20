@@ -4,7 +4,7 @@
 @import 'libs/vendor';
 @import 'libs/breakpoints';
 @import 'libs/html-grid';
-@import 'fontawesome-all.min.css';
+@import '../css/fontawesome-all.min';
 
 /*
 	Fractal by HTML5 UP
@@ -45,7 +45,8 @@
 
 	@import 'components/row';
 	@import 'components/box';
-	@import 'components/button';
+    @import 'components/button';
+    @import 'components/flex';
 	@import 'components/form';
 	@import 'components/icon';
 	@import 'components/image';
@@ -60,6 +61,6 @@
 // Layout.
 
     @import 'layout/header';
-    @import 'layout/nav';
 	@import 'layout/main';
-	@import 'layout/footer';
+    @import 'layout/footer';
+    @import 'layout/nav';
