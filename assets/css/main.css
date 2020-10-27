@@ -1,4 +1,4 @@
-@import 'fontawesome-all.min.css';
+@import "fontawesome-all.min.css";
 /*
 	Fractal by HTML5 UP
 	html5up.net | @ajlkn
@@ -3895,6 +3895,11 @@ body.is-preload #header .image img {
 /* Nav */
 .nav {
   min-height: 2.5em;
+}
+
+.nav img {
+  height: 2.5em;
+  width: auto;
 }
 
 .nav a {
