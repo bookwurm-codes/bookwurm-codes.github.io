@@ -1,0 +1,172 @@
+// Contents
+//
+// Navbar brand
+// Navbar nav
+// Navbar text
+// Responsive navbar
+// Navbar themes
+
+
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap; // allow us to do the line break for collapsing content
+    align-items: center;
+    justify-content: space-between; // space out brand from logo
+    padding: $navbar-padding-y $navbar-padding-x;
+}
+
+// Navbar brand
+//
+// Used for brand, project, or site names.
+
+.navbar-brand {
+  display: inline-block;
+  padding-top: $navbar-brand-padding-y;
+  padding-bottom: $navbar-brand-padding-y;
+  margin-right: $navbar-padding-x;
+  line-height: $navbar-brand-height;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+
+// Navbar nav
+//
+// Custom navbar navigation (doesn't require `.nav`, but does make use of `.nav-link`).
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row; // cannot use `inherit` to get the `.navbar`s value
+  flex-basis: 100%;
+  flex-grow: 1;
+  // For always expanded or extra full navbars, ensure content aligns itself
+  // properly vertically. Can be easily overridden with flex utilities.
+  align-items: center;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+
+  .nav-link {
+    padding-right: $navbar-nav-link-padding-x;
+    padding-left: $navbar-nav-link-padding-x;
+    display: block;
+    padding: $nav-link-padding-y $nav-link-padding-x;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+    }
+
+    // Disabled state lightens text
+    &.disabled {
+        color: $nav-link-disabled-color;
+        pointer-events: none;
+        cursor: default;
+    }
+  }
+}
+
+// Button for toggling the navbar when in its collapsed state
+.navbar-toggler {
+  display: none;
+}
+
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  content: "";
+  background: no-repeat center center;
+  background-size: 100% 100%;
+}
+
+
+// Responsive for Mobile devices
+body.is-mobile {
+
+    .navbar-nav {
+        flex-direction: column;
+    }
+    .nav-link {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    
+    .navbar-toggler {
+        display: block;
+        padding: $navbar-toggler-padding-y $navbar-toggler-padding-x;
+        font-size: $navbar-toggler-font-size;
+        line-height: 1;
+        background-color: transparent; // remove default button style
+        border: _size(border-width) solid transparent; // remove default button style
+        border-radius: $navbar-toggler-border-radius;
+
+        &:hover,
+        &:focus  {
+            text-decoration: none;
+        }
+    }
+}
+
+
+// Navbar theme
+// Dark links against a light background
+.navbar-light {
+  .navbar-brand {
+    color: $navbar-light-brand-color;
+
+    &:hover,
+    &:focus  {
+      color: $navbar-light-brand-hover-color;
+    }
+  }
+
+  .navbar-nav {
+        .nav-link {
+        color: $navbar-light-color;
+
+        &:hover,
+        &:focus  {
+            color: $navbar-light-hover-color;
+        }
+
+        &.disabled {
+            color: $navbar-light-disabled-color;
+        }
+        }
+
+        .show > .nav-link,
+        .active > .nav-link,
+        .nav-link.show,
+        .nav-link.active {
+        color: $navbar-light-active-color;
+        }
+  }
+
+  .navbar-toggler {
+    color: $navbar-light-color;
+    border-color: $navbar-light-toggler-border-color;
+  }
+
+  .navbar-toggler-icon {
+    background-image: escape-svg($navbar-light-toggler-icon-bg);
+  }
+
+  .navbar-text {
+    color: $navbar-light-color;
+    a {
+      color: $navbar-light-active-color;
+
+      &:hover,
+      &:focus  {
+        color: $navbar-light-active-color;
+      }
+    }
+  }
+}
