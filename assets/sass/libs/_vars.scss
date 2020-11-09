@@ -9,23 +9,18 @@
 
 // Size.
 	$size: (
-		border-radius:		.25rem,
+		border-radius:		6px,
 		border-width:		1px,
 		element-height:		2.75em,
-        element-margin:		2em,
-        spacer:             1rem
-    );
-    $line-height-base:      1.5 !default;
+		element-margin:		2em
+	);
 
 // Font.
 	$font: (
 		family:				(Arial, Helvetica, sans-serif),
 		family-fixed:		('Courier New', monospace),
 		weight:				normal,
-        weight-bold:		bold,
-        size-base:          1rem, // Assumes the browser default, typically `16px`
-        size-lg:            1.25rem,
-        size-sm:            .875rem
+		weight-bold:		bold
 	);
 
 // Palette.
@@ -74,38 +69,4 @@
 			border2-bg:		rgba(144,144,144,0.15),
 			invert:			false
 		)
-    );
-
-$gray-600: #6c757d !default;
-$black:    #000 !default;
-    
-// Navs
-$nav-link-padding-y:                .5rem !default;
-$nav-link-padding-x:                1rem !default;
-$nav-link-disabled-color:           $gray-600 !default;
-
-// Navbar
-$navbar-padding-y:                  _size(spacer) / 2 !default;
-$navbar-padding-x:                  _size(spacer) !default;
-
-$navbar-nav-link-padding-x:         .5rem !default;
-
-// Compute the navbar-brand padding-y so the navbar-brand will have the same height as navbar-text and nav-link
-$nav-link-height:                   map-get($font, size-base) * $line-height-base + $nav-link-padding-y * 2 !default;
-$navbar-brand-height:               1.25rem * $line-height-base !default;
-$navbar-brand-padding-y:            ($nav-link-height - $navbar-brand-height) / 2 !default;
-
-$navbar-toggler-padding-y:          .25rem !default;
-$navbar-toggler-padding-x:          .75rem !default;
-$navbar-toggler-font-size:          _font(size-lg) !default;
-$navbar-toggler-border-radius:      _size(border-radius) !default;
-
-$navbar-light-color:                rgba($black, .5) !default;
-$navbar-light-hover-color:          rgba($black, .7) !default;
-$navbar-light-active-color:         rgba($black, .9) !default;
-$navbar-light-disabled-color:       rgba($black, .3) !default;
-$navbar-light-toggler-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='#{$navbar-light-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
-$navbar-light-toggler-border-color: rgba($black, .1) !default;
-
-$navbar-light-brand-color:                $navbar-light-active-color !default;
-$navbar-light-brand-hover-color:          $navbar-light-active-color !default;
+	);
