@@ -23,7 +23,11 @@
 				&:before {
 					font-size: 1.75rem;
 				}
-			}
+            }
+            
+            img {
+                max-width: 40%;
+            }
 		}
 
 		&.major {
@@ -68,8 +72,8 @@
 						display: inline-block;
 						vertical-align: middle;
 						color: _palette(fg);
-					}
-				}
+                    }
+                }
 			}
 
 			// Small.

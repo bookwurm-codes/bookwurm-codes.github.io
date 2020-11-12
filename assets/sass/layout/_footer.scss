@@ -11,7 +11,8 @@
 		@include padding(4.5em, 0);
 		color: _palette(accent3, fg-light);
 		text-align: center;
-
+        display: flex;
+        justify-content: space-around;
 		a {
 			color: inherit;
 		}

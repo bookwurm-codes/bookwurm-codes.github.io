@@ -2412,6 +2412,10 @@ ul.icons li .icon:before {
   font-size: 1.75rem;
 }
 
+ul.icons li img {
+  max-width: 40%;
+}
+
 ul.icons.major li {
   padding: 0 2.5em 0 0;
 }
@@ -3831,6 +3835,11 @@ body.is-preload #header .image img {
   padding: 4.5em 0 2.5em 0 ;
   color: #b0b0b0;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 #footer input, #footer select, #footer textarea {
