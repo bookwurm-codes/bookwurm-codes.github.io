@@ -1,132 +1,165 @@
-<!DOCTYPE HTML>
-<!--
-	Fractal by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-        <title>Kenan Blackerby - Front End Development</title>
-        <link rel="shortcut icon" type="image/jpg" href="images/GoodTimingIcoKB.ico"/>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Kenan Blackerby - Front End Development</title>
+<link rel="shortcut icon" type="image/jpg" href="images/GoodTimingIcoKB.ico"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
 
-		<!-- Header -->
-        <header id="header">
-            <div class="content">
-                <h1>Kenan Blackerby</h1>
-                <p>Front end developer</p>
-                <ul class="actions">
-                    <li><a href="#about" class="button icon solid fa-chevron-down scrolly">Learn More About Me</a></li>
-                </ul>
-            </div>
-        </header>
+<!-- Navbar -->
+<nav class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="toggleDropdown();" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="#aboutme" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT ME</a>
+    <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PROJECTS</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+  </div>
+  <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDropdown" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top">
+  <a href="#aboutme" class="w3-bar-item w3-button w3-padding-large" onclick="toggleDropdown();">ABOUT ME</a>
+  <a href="#projects" class="w3-bar-item w3-button w3-padding-large" onclick="toggleDropdown();">PROJECTS</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="toggleDropdown();">CONTACT</a>
+</div>
+</nav>
 
-		<!-- About -->
-        <section id="about" class="wrapper style2">
-            <header class="major">
-                <h2>About Me</h2>
-            </header>
-            <div class="inner">
-                <h3>Who Am I?</h3>
-                <h4>I am Kenan Blackerby, a Front End Developer</h4>
-                <p>I am passionate about creating solutions to meet real world needs. I have recently discovered a passion building application website front ends and believe that each problem is a puzzle to solve. This perspective helps me to focus on the important details and bring ideas to life. Take a look at works in my portfolio and let's talk about working together.</p>
-                <ul class="actions">
-                    <li><a href="#" class="button primary icon solid fa-download">My Resume</a></li>
-                    <li><a href="#projects" class="button icon solid fa-chevron-down scrolly">See My Work</a></li>
-                </ul>
-            </div>
-            
-        </section>
+<!-- Page content -->
+<main class="w3-content" style="max-width:2000px">
 
-		<!-- Skills -->
-        <section id="two" class="wrapper">
-            <div class="inner alt">
-                <h2>My Skills</h2>
-                <section class="special">
-                    <ul class="icons">
-                        <li><img alt="HTML5" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" /></li>
-                        <li><img alt="CSS3" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" /></li>
-                        <li><img alt="JavaScript" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" /></li>
-                        <li><img alt="C++" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/cpp/cpp.png" /></li>
-                        <li><img alt="Git" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png" /></li>
-                    </ul>
-                </section>
-            </div>
-        </section>
+  <!-- Automatic Slideshow Images -->
+  <div class="w3-display-container w3-center">
+    <img src="/images/christian-wiediger-keyboard-unsplash-dark.jpg" style="width: 100%;">
+    <div class="w3-display-middle w3-container w3-text-white w3-left-align">
+      <h1 class="w3-jumbo">Kenan Blackerby</h1>
+      <h3 class=""><strong>Front End Developer</strong></h3>   
+    </div>
+  </div>
 
-		<!-- Call to Action -->
-        <section id="call-to-action" class="wrapper style2 special">
-            <header class="major">
-                <h2>Interested in working together?</h2>
-            </header>
-            <ul class="actions special">
-                <li><a href="#contact" class="button primary icon solid scrolly">Get in Contact</a></li>
-            </ul>
-        </section>
+  <!-- About Me Section -->
+  <section id="aboutme" class="w3-container w3-content w3-center w3-padding-64">
+    <h2 class="w3-wide">Who am I?</h2>
+    <p class="w3-opacity"><em>I am Kenan Blackerby, a Front End Developer</em></p>
+    <p class="w3-justify">I am passionate about creating solutions to meet real world needs. I have recently discovered a passion building application website front ends and believe that each problem is a puzzle to solve. This perspective helps me to focus on the important details and bring ideas to life. Take a look at my portfolio projects and let's talk about working together.</p>
+    <button class="w3-button w3-black w3-margin-bottom" onclick="">My Resume</button>
+    <div class="w3-row">
+      <h3>My Skills</h3>
+      <div class="w3-col m2 s4 w3-padding">
+        <img class="w3-image" alt="HTML5" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png">
+      </div>
+      <div class="w3-col m2 s4 w3-padding">
+        <img class="w3-image" alt="CSS3" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png">
+      </div>
+      <div class="w3-col m2 s4 w3-padding">
+        <img class="w3-image" alt="JavaScript" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png">
+      </div>
+      <div class="w3-col m2 s4 w3-padding">
+        <img class="w3-image" alt="C++" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/cpp/cpp.png">
+      </div>
+      <div class="w3-col m2 s4 w3-padding">
+        <img class="w3-image" alt="Git" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png">
+      </div>
+    </div>
+  </section>
 
-		<!-- Projects -->
-        <section id="projects" class="wrapper">
-            <div class="inner alt">
-                <h2>My Projects</h2>
-                <section class="spotlight">
-                    <div class="image"><img src="images/pic01.jpg" alt="" /></div>
-                    <div class="content">
-                        <h3>Currently in Work</h3>
-                        <p></p>
-                    </div>
-                </section>
-            </div>
-        </section>
-
-        <!-- Contact -->
-        <section id="contact" class="wrapper">
-            <div class="inner">
-                <h2>Contact</h2>
-                <form method="post" action="#">
-                    <div class="row gtr-uniform">
-                        <div class="col-6 col-12-xsmall">
-                            <input type="text" name="name" id="name" value="" placeholder="Name" />
-                        </div>
-                        <div class="col-6 col-12-xsmall">
-                            <input type="email" name="email" id="email" value="" placeholder="Email" />
-                        </div>
-                        <div class="col-12">
-                            <textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
-                        </div>
-                        <div class="col-12">
-                            <ul class="actions">
-                                <li><input type="submit" value="Send Message" class="primary" /></li>
-                                <li><input type="reset" value="Clear" /></li>
-                            </ul>
-                        </div>
-                    </div>
-                </form>
+  <!-- Projects Section -->
+  <div class="w3-black">
+    <section id="projects" class="w3-container w3-content w3-padding-64">
+      <h2 class="w3-wide w3-center">PROJECTS</h2>
+      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+          <img src="/w3images/newyork.jpg" alt="New York" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>New York</b></p>
+            <p class="w3-opacity">Fri 27 Nov 2016</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="showModal();">Buy Tickets</button>
+          </div>
         </div>
-        </section>
+        <div class="w3-third w3-margin-bottom">
+          <img src="/w3images/paris.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Paris</b></p>
+            <p class="w3-opacity">Sat 28 Nov 2016</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="showModal();">Buy Tickets</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="/w3images/sanfran.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>San Francisco</b></p>
+            <p class="w3-opacity">Sun 29 Nov 2016</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="showModal();">Buy Tickets</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 
-		<!-- Footer -->
-        <footer id="footer">
-            <img src="images/GoodTimingLogo.png" alt="kb Tag Logo">
-            <ul class="icons">
-                <li><a href="https://www.linkedin.com/in/kenan-blackerby/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                <li><a href="https://github.com/bookwurm-codes" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-                <li><span class="label">kblackerby2@gmail.com</span></li>
-            </ul>
-            <!-- <p class="copyright">&copy; Untitled. Credits: <a href="http://html5up.net">HTML5 UP</a></p> -->
-        </footer>
+  <!-- Ticket Modal -->
+  <div id="ticketModal" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-teal w3-center w3-padding-32"> 
+        <span onclick="hideModal();" 
+       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
+      </header>
+      <div class="w3-container">
+        <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="How many?">
+        <p><label><i class="fa fa-user"></i> Send To</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="Enter email">
+        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
+        <button class="w3-button w3-red w3-section" onclick="hideModal();">Close <i class="fa fa-remove"></i></button>
+        <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+      </div>
+    </div>
+  </div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+  <!-- Contact Section -->
+  <section class="w3-container w3-content w3-padding-64" id="contact">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <p class="w3-opacity w3-center"><i>Let's get in contact</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom w3-cell-middle">
+        <i class="fa fa-map-marker" style="width:30px"></i> Dallas, US<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: kblackerby2@gmail.com<br>
+      </div>
+      <div class="w3-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <textarea class="w3-input w3-border" type="text" placeholder="Message" rows="5" required name="Message"></textarea>
+          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  
+<!-- End Page Content -->
+</main>
 
-	</body>
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-light-grey w3-xlarge">
+  <img src="images/GoodTimingLogo.png" alt="kb Tag Logo">
+  <i class="fa fa-github w3-opacity w3-hover-opacity-off"></i>
+  <i class="fa fa-linkedin w3-opacity w3-hover-opacity-off"></i>
+  <p class="w3-medium w3-opacity">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script src="assets/script.js"></script>
+</body>
 </html>

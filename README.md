@@ -1,15 +1,9 @@
-The landing page for my software portfolio
+The landing page for my portfolio, showcasing my projects and skills
 
-Lightweight, fully responsive, and built on HTML5, Sass, and flexbox.
+Lightweight, fully responsive, and built on HTML5 and W3.CSS
 
 Credits:
-
-	Demo Images:
-		Unsplash (unsplash.com)
-
+	Background Image:
+		Christian Wiediger - Unsplash (unsplash.com)
 	Icons:
 		Font Awesome (fontawesome.io)
-
-	Other:
-		jQuery (jquery.com)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
