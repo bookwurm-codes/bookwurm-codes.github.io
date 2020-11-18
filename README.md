@@ -1,9 +1,12 @@
-The landing page for my portfolio, showcasing my projects and skills
+## This is my portfolio website, showcasing my projects and skills in Front End Web Development
 
-Lightweight, fully responsive, and built on HTML5 and W3.CSS
+#### Fully responsive, Built on HTML5, W3.CSS, and Javascript
+<br>
 
-Credits:
-	Background Image:
-		Christian Wiediger - Unsplash (unsplash.com)
-	Icons:
-		Font Awesome (fontawesome.io)
+---
+
+### Credits:
+ - Background Image:
+    - Christian Wiediger - Unsplash (unsplash.com)
+ - Icons:
+	- Font Awesome (fontawesome.io)
